@@ -1,0 +1,320 @@
+@import 'utilities.css';
+
+:root{
+    --primary: #5c7edb;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #5a5858;
+    --light: #c8d6f3;
+    --secondary: #070606;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+header{
+    background: var(--dark);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:3rem;
+    text-transform: uppercase;
+}
+
+header nav .left a:hover{
+    color:var(--primary);
+}
+
+header nav{
+    padding:4rem 0;
+}
+
+header nav .branding{
+    margin-right:3rem;
+}
+
+.hero{
+    padding:4rem 0;
+}
+
+.hero .left img{
+    width:400px;
+}
+
+.hero .right{
+    color:var(--pure)
+}
+
+.hero .right h6{
+    font-size:1.6rem;
+    color:var(--primary);
+    margin-bottom:1rem;
+}
+
+.hero .right h1{
+    font-size:4rem;
+    font-weight:100;
+    line-height:1.2;
+    margin-bottom:2rem;
+}
+
+.hero .right h1 span{
+    color:var(--primary);
+}
+
+.hero .right p{
+    line-height:1.9;
+    margin-bottom: 4rem;
+}
+
+.hero .right{
+    margin-top:-13rem;
+}
+
+section{
+    padding:6rem 0;
+}
+
+section.sobre .sobre-mí-img{
+    height:450px;
+}
+
+section.sobre h1{
+   margin-bottom:1rem; 
+   font-size:1.6rem;
+   font-weight:400;
+}
+
+section.sobre h1 span{
+    color:var(--primary);
+}
+
+section.sobre h3{
+    font-size:1rem;
+    margin-bottom:1rem;
+    font-weight:400;
+}
+
+section.sobre p{
+    font-family:'Poppins', sans-serif;
+    color:var(--ternary);
+    line-height:1.8;
+}
+
+section.sobre .social{
+    display: flex;
+}
+
+section.sobre .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right:0.6rem;
+}
+
+section.sobre .social a:hover{
+    background:var(--primary);
+}
+
+.section-heading span{
+    color:var(--primary);
+}
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading + p{
+    color:var(--ternary);
+    font-family: sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section.aptitudes{
+    background:var(--light);
+}
+
+section.aptitudes .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+
+}
+
+section.aptitudes .card-wrapper .card{
+    background:var(--pure);
+    padding:2rem 1rem;
+    position: relative;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+section.aptitudes .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+section.aptitudes .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.aptitudes .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.aptitudes .card-wrapper .card:hover h2, section.aptitudes .card-wrapper .card:hover {
+    color:var(--pure);
+}
+
+section.portfolio{
+    background:var(--light);
+}
+
+section.contacto .card-wrapper .card{
+    text-align: center;
+}
+
+section.contacto .card-wrapper .card h1{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+section.contacto .card-wrapper .card h6{
+    font-size: 1rem;
+    color:var(--ternary);
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+section.contacto .input-wrap{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+    margin-bottom: 2rem; 
+}
+
+section.contacto .input-wrap-2{
+    display:flex;
+    flex-direction: column;
+}
+
+section.contacto input{
+    padding: 0.5rem; 
+}
+
+section.contacto .input-wrap-2 input{
+    margin-bottom:2rem; 
+}
+
+section.contacto .input-wrap-2 textarea{
+    padding: 0.5rem; 
+}
+
+section.contacto .btn-wrapper{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding:5rem 0;
+}
+
+footer .footer-logo{
+    margin-bottom: 3rem;
+}
+
+footer .footer-socials a{
+    margin-right: 1rem;
+}
+
+footer .footer-socials{
+    margin-bottom:2rem ;
+}
+
+footer .derechosIconos{
+    color:var(--ternary);
+}
+
+
+.slider {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    margin:0;
+    left:0;
+    animation: cambio 20s infinite alternate ease-in;
+}
+
+.slider ul:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 80%;
+    height: 400px;
+    float: left;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+
+
