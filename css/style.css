@@ -1,11 +1,11 @@
 @import 'utilities.css';
 
 :root{
-    --primary: #5c7edb;
+    --primary: #849fe9;
     --dark: #161616;
     --pure: #FFFFFF;
     --ternary: #5a5858;
-    --light: #c8d6f3;
+    --light: #dae7e9;
     --secondary: #070606;
 }
 
@@ -27,14 +27,39 @@ header{
 
 .container{
     max-width: 1152px;
-    padding:0 15px;
-    margin: 0 auto;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+
+menu{
+    background-color: #000;
+}
+
+#menu ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu ul li a{
+    color:white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    background-color: #849fe9;
 }
 
 header nav .left a{
     color:var(--pure);
     text-decoration: none;
-    margin-right:3rem;
+    margin-right:1rem;
     text-transform: uppercase;
 }
 
@@ -43,11 +68,11 @@ header nav .left a:hover{
 }
 
 header nav{
-    padding:4rem 0;
+    padding:3rem 0;
 }
 
 header nav .branding{
-    margin-right:3rem;
+    margin-right:6rem;
 }
 
 .hero{
@@ -198,7 +223,19 @@ section.aptitudes .card-wrapper .card:hover h2, section.aptitudes .card-wrapper 
     color:var(--pure);
 }
 
+section.idiomas img{
+    margin-right: 8rem;
+}
+
 section.portfolio{
+    background:var(--light);
+}
+
+section.viajes{
+    background:var(--white);
+}
+
+section.idiomas{
     background:var(--light);
 }
 
@@ -247,6 +284,7 @@ section.contacto .btn-wrapper{
 }
 
 footer{
+   
     background: var(--dark);
     text-align: center;
     padding:5rem 0;
@@ -267,54 +305,5 @@ footer .footer-socials{
 footer .derechosIconos{
     color:var(--ternary);
 }
-
-
-.slider {
-    width: 60%;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 60px;
-}
-
-.slider ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    margin:0;
-    left:0;
-    animation: cambio 20s infinite alternate ease-in;
-}
-
-.slider ul:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-
-.slider img{
-    width: 80%;
-    height: 400px;
-    float: left;
-}
-
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-    
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
-
-
 
 
