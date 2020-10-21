@@ -1,4 +1,5 @@
 @import 'utilities.css';
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
 
 :root{
     --primary: #849fe9;
@@ -10,7 +11,8 @@
 }
 
 body{
-    font-family:'Poppins', sans-serif;
+    font-family: 'Quicksand';
+    font-weight:normal;
 }
 
 *{
@@ -72,7 +74,7 @@ header nav{
 }
 
 header nav .branding{
-    margin-right:6rem;
+    margin-right:7rem;
 }
 
 .hero{
@@ -106,11 +108,12 @@ header nav .branding{
 
 .hero .right p{
     line-height:1.9;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .hero .right{
-    margin-top:-13rem;
+    margin-top:-6rem;
+    
 }
 
 section{
@@ -119,6 +122,24 @@ section{
 
 section.sobre .sobre-mí-img{
     height:450px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+section.portfolio .portfolio2-img{
+    margin-left: 27rem;
+}
+
+section.portfolio .portfolio3-img{
+    margin-left: 27rem;
+}
+
+section.portfolio .portfolio4-img{
+    margin-left: 35rem;
+}
+
+section.portfolio .portfolio5-img{
+    margin-left: 35rem;
 }
 
 section.sobre h1{
@@ -178,11 +199,11 @@ section.sobre .social a:hover{
     text-align: center;
 }
 
-section.aptitudes{
+section.conocimientos{
     background:var(--light);
 }
 
-section.aptitudes .card-wrapper{
+section.conocimientos .card-wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
@@ -190,7 +211,7 @@ section.aptitudes .card-wrapper{
 
 }
 
-section.aptitudes .card-wrapper .card{
+section.conocimientos .card-wrapper .card{
     background:var(--pure);
     padding:2rem 1rem;
     position: relative;
@@ -198,7 +219,7 @@ section.aptitudes .card-wrapper .card{
     text-align: center;
 }
 
-section.aptitudes .card-wrapper .card img{
+section.conocimientos .card-wrapper .card img{
     position: absolute;
     top:-3.5rem;
     left:50%;
@@ -209,17 +230,17 @@ section.aptitudes .card-wrapper .card img{
     -o-transform: translateX(-50%);
 }
 
-section.aptitudes .card-wrapper .card h2{
+section.conocimientos .card-wrapper .card h2{
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-section.aptitudes .card-wrapper .card:hover{
+section.conocimientos .card-wrapper .card:hover{
     background: var(--dark);
 }
 
-section.aptitudes .card-wrapper .card:hover h2, section.aptitudes .card-wrapper .card:hover {
+section.conocimientos .card-wrapper .card:hover h2, section.conocimientos .card-wrapper .card:hover {
     color:var(--pure);
 }
 
@@ -305,8 +326,6 @@ footer .footer-socials{
 footer .derechosIconos{
     color:var(--ternary);
 }
-
-
 
 h4, h2,small,a{
     margin: 0;
@@ -410,23 +429,6 @@ a{
 }
 .slick-next{
     right: 0px;
-}
-
-
-/* Other Carousel (Portfolio) */
-
-.Carousel1{
-    width: 80%;
-    margin: 0px 60px;
-}
-.Carousel1 h2{
-    font-size: 26px;
-    line-height: 38px;
-    padding-bottom: 24px;
-    opacity: .9;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    text-align: center;
 }
 
 /* images */
