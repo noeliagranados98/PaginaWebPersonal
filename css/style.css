@@ -61,7 +61,7 @@ menu{
 header nav .left a{
     color:var(--pure);
     text-decoration: none;
-    margin-right:1rem;
+    margin-right:2rem;
     text-transform: uppercase;
 }
 
@@ -112,8 +112,7 @@ header nav .branding{
 }
 
 .hero .right{
-    margin-top:-6rem;
-    
+    margin-top:-6rem;  
 }
 
 section{
@@ -124,22 +123,15 @@ section.sobre .sobre-mí-img{
     height:450px;
     margin-left: 2rem;
     margin-top: 1rem;
+    border-radius: 4px;
 }
 
-section.portfolio .portfolio2-img{
-    margin-left: 27rem;
+section.formacion .esi-img{
+    border-radius: 4px;
 }
 
-section.portfolio .portfolio3-img{
-    margin-left: 27rem;
-}
-
-section.portfolio .portfolio4-img{
-    margin-left: 35rem;
-}
-
-section.portfolio .portfolio5-img{
-    margin-left: 35rem;
+section.formacion .uclm-img{
+    border-radius: 4px;
 }
 
 section.sobre h1{
@@ -203,12 +195,23 @@ section.conocimientos{
     background:var(--light);
 }
 
+section.portfolio{
+    height: 1200px;
+}
+
 section.conocimientos .card-wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
+    
+}
 
+section.portfolio .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 18rem;
+    grid-row-gap: 6rem;
 }
 
 section.conocimientos .card-wrapper .card{
@@ -217,12 +220,37 @@ section.conocimientos .card-wrapper .card{
     position: relative;
     padding-top: 3rem;
     text-align: center;
+    border-radius: 1rem;
+    border-style: ridge;
+
+}
+
+section.portfolio .card-wrapper .card{
+    background:var(--pure);
+    padding:2rem 1rem;
+    position: relative;
+    padding-top: 3rem;
+    margin-left: 16rem;
+    text-align: center;
 }
 
 section.conocimientos .card-wrapper .card img{
     position: absolute;
     top:-3.5rem;
     left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+section.portfolio .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    border-style: groove;
+    border-radius: 4px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -239,6 +267,7 @@ section.conocimientos .card-wrapper .card h2{
 section.conocimientos .card-wrapper .card:hover{
     background: var(--dark);
 }
+
 
 section.conocimientos .card-wrapper .card:hover h2, section.conocimientos .card-wrapper .card:hover {
     color:var(--pure);
@@ -514,5 +543,14 @@ a{
     right: 0px;
 }
 
-
-
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 35rem;
+    color: #ffffff;
+    background-color: #1d3169;
+    border: 2px solid #161616;
+    border-radius: 30px;
+  }

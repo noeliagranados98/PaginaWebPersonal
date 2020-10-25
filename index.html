@@ -3,7 +3,6 @@
 
 <head>
   <script defer src="js/main.js"></script>
-  <script defer src="js/main2.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi página personal</title>
@@ -21,7 +20,6 @@
           </div>
           <div id="menu">
             <ul>
-              <li><a href="#home">Home</a></li>
               <li><a href="#sobre">Sobre mí</a></li>
               <li><a href="#formacion">Formación</a></li>
               <li><a href="#conocimientos">Conocimientos</a></li>
@@ -35,7 +33,7 @@
 
       <div class="hero flex items-center justify-between">
         <div class="left flex-1 flex justify-center">
-          <img src="./images/FotoPersonal.jpg" style="width: 270px; height: 390px" alt="" />
+          <img src="./images/FotoPersonal.jpg" style="width: 270px; height: 390px" alt=""/>
         </div>
         <div class="right flex-1">
           <h6>Noelia María Granados Carrasco</h6>
@@ -110,9 +108,8 @@
   <section class="conocimientos">
     <div class="container">
       <a name="conocimientos" id="conocimientos"></a>
+      <br>
       <h1 align="center" class="section-heading">Conocimientos</h1>
-      <br>
-      <br>
       <br>
       <br>
       <h3 align="justify" class="section-heading">Lenguajes de programación</h3>
@@ -127,7 +124,6 @@
         <div class="card">
           <h4>Nivel avanzado: Java, Dart</p>
           </h4>
-          <p></p>
         </div>
       </div>
       <br>
@@ -196,10 +192,10 @@
   <section class="formacion">
     <div class="container flex items-center">
       <div class="flex-1">
-        <img class="sobre-mí-img" src="./images/esi.jpg" width="400" height="200" alt="">
+        <img class="esi-img" src="./images/esi.jpg" width="400" height="200" alt="">
         <br>
         <br>
-        <img class="sobre-mí-img" src="./images/uclm.jpg" width="400" height="200" alt=""> 
+        <img class="uclm-img" src="./images/uclm.jpg" width="400" height="200" alt=""> 
       </div>
       <div class="flex-1">
         <a name="formacion" id="formacion"></a>
@@ -232,6 +228,9 @@
   </section>
 
   <section class="portfolio">
+   <div class="container">
+    <a name="portfolio" id="portfolio"></a>
+    <br>
     <h1 class="section-heading">Mi portfolio</h1>
     <br>
     <p align="center">Aquí se muestran algunos de los proyectos y trabajos que he realizado durante mis años como
@@ -240,48 +239,37 @@
     </p>
     <br>
     <br>
-    <h4 align="center">Proyecto realizado para la asignatura de 
-      Gestión de Sistemas de la Información.
-    <br>
-    El lenguaje utilizado fue: C# con UNITY 3D además de otros recursos como la página web de Vuforia.
-    </h4>
-    <br>
-    <br>
-    <img class="portfolio2-img" src="./images/portfolio2.jpg"  alt="" />
     <br>
     <br>
     <br>
-    <h4 align="center">Proyecto realizado para la asignatura de 
-      Interacción Persona-Ordenador I.
-    <br>
-    El lenguaje fue Java haciendo uso también de la biblioteca gráfica Swing y Eclipse.
-    </h4>
-    <br>
-    <br>
-    <img class="portfolio3-img" src="./images/portfolio3.jpg"  alt="" />
-    <br>
-    <br>
-    <br>
-    <h4 align="center">Proyecto realizado para la asignatura de 
-      Interacción Persona-Ordenador II.
-    <br>
-    El lenguaje utilizado fue Java y el entorno de desarrollo Android Studio.
-    </h4>
-    <br>
-    <br>
-    <img class="portfolio4-img" src="./images/portfolio4.jpg"  alt="" />
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="./images/portfolio2.jpg">
+      </div>
+      <div class="card">
+        <img src="./images/portfolio3.jpg">
+      </div>
+    </div>
     <br>
     <br>
     <br>
-    <h4 align="center">Proyecto realizado para la asignatura de 
-      Interacción Persona-Ordenador II.
-    <br>
-    El lenguaje de programación utlizado fue Dart y el entorno Flutter,
-    haciendo uso además de Visual Studio Code.
-    </h4>
     <br>
     <br>
-    <img class="portfolio5-img" src="./images/portfolio5.png"  alt="" />
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="./images/portfolio4.jpg">
+      </div>
+      <div class="card">
+        <img src="./images/portfolio5.png">
+      </div>
   </section>
 
   <section class="intereses">
@@ -412,16 +400,6 @@
           <div class="slick">
             <div>
               <a href="/">
-                <h4 "><small>Mójacar</small></h4>
-                    <picture>
-                      <img src=" ./images/fotillo2.jpg" alt="Image">
-                  </picture>
-              </a>
-            </div>
-          </div>
-          <div class="slick">
-            <div>
-              <a href="/">
                 <h4><small>Piazze (Roma)</small></h4>
                 <picture>
                   <img src="./images/fotillo3.jpg" alt="Image">
@@ -445,16 +423,6 @@
                 <h4><small>Piazza San Pietro (Roma)</small></h4>
                 <picture>
                   <img src="./images/fotillo9.jpg" alt="Image">
-                </picture>
-              </a>
-            </div>
-          </div>
-          <div class="slick">
-            <div>
-              <a href="/">
-                <h4 style="color: grey;"><small>Coliseo Romano</small></h4>
-                <picture>
-                  <img src="./images/fotillo10.jpg" alt="Image">
                 </picture>
               </a>
             </div>
@@ -490,6 +458,9 @@
           </svg>
         </button>
       </div>
+      <br>
+      <br>
+      <a class="boton_personalizado" href="">Volver arriba</a>
     </div>
   </section>
 
