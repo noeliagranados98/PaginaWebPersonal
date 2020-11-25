@@ -21,3 +21,4 @@ function Move(value) {
         track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
     }
 }
+

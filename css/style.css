@@ -543,14 +543,79 @@ a{
     right: 0px;
 }
 
-  .boton_personalizado{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    margin-left: 35rem;
-    color: #ffffff;
-    background-color: #1d3169;
-    border: 2px solid #161616;
-    border-radius: 30px;
+  #boton_personalizado {
+    display: inline-block;
+    background-color: #3c62df;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    
   }
+  #boton_personalizado:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #boton_personalizado:active {
+    background-color: #555;
+  }
+  #boton_personalizado::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  
+
+
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    background: #212127;
+    border-bottom: 1px solid #212127;
+    height: 45px;
+}
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+.menu-main a.active{
+    background-color: #fefeff;
+}
+
+@media (max-width: 768px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+}
