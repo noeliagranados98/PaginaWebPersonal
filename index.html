@@ -14,6 +14,7 @@
 </script>
 
 
+
   <script defer src="js/main.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +22,29 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link  rel="icon" href="images/favicon.ico" type="image/png" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+    jQuery(document).ready(function () {
+
+      var btn = $('#boton_personalizado');
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+      });
+
+    });
+
+  </script>
 
 </head>
 
@@ -501,30 +525,9 @@
       <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     </div>
   </footer>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
 
-  <script>
 
-    jQuery(document).ready(function () {
-
-      var btn = $('#boton_personalizado');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 300) {
-          btn.addClass('show');
-        } else {
-          btn.removeClass('show');
-        }
-      });
-
-      btn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, '300');
-      });
-
-    });
-
-  </script>
 </body>
 
 </html>
